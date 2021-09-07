@@ -16,6 +16,7 @@ namespace Практикум_4._5
 
             Console.WriteLine("Введите логин");
             User.Login = Console.ReadLine();
+            User.LoginLenght = User.Login.Length;
         }
     }
 }
