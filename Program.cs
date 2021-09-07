@@ -28,7 +28,18 @@ namespace Практикум_4._5
             {
                 User.HasPet = false;
             }
+
+            Console.WriteLine("Введите возраст пользователя");
+            User.Age = double.Parse(Console.ReadLine());
             
+            User.favcolors = new string[3];
+            Console.WriteLine("Введите три любимых цвета пользователя");
+
+            for (int i = 0; i < User.favcolors.Length; i++)
+            {
+                User.favcolors[i] = Console.ReadLine();
+            }
+
         }
     }
 }
