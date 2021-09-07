@@ -17,6 +17,18 @@ namespace Практикум_4._5
             Console.WriteLine("Введите логин");
             User.Login = Console.ReadLine();
             User.LoginLenght = User.Login.Length;
+
+            Console.WriteLine("Есть ли у вас животные? Да или Нет");
+            var result = Console.ReadLine();
+            if (result == "Да")
+            {
+                User.HasPet = true;
+            }
+            else
+            {
+                User.HasPet = false;
+            }
+            
         }
     }
 }
